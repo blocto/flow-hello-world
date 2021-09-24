@@ -51,6 +51,7 @@ const SendTransaction = () => {
         fcl.transaction(simpleTransaction),
         fcl.proposer(fcl.currentUser().authorization),
         fcl.payer(fcl.currentUser().authorization),
+        fcl.limit(100),
         fcl.ref(block.id),
       ])
 
